@@ -20,9 +20,66 @@ html {
   justify-content: center; }
 
 /*Menu y Submenu*/
-nav {
-  background-color: #57A773; }
+nav ul {
+  font-size: 1rem; }
+  nav ul li {
+    background-color: #57A773;
+    text-align: center; }
 
+/*Titulos y subtitulos*/
+.titulo {
+  /*Titulo animado*/
+  animation-name: titulo;
+  animation-duration: 3s;
+  animation-iteration-count: 1s;
+  text-align: center;
+  background-color: #2D2F31;
+  color: #57A773;
+  position: sticky; }
+
+.subtitulo {
+  /*subtitulo animado*/
+  animation-name: subtitulo;
+  text-decoration: 2s;
+  animation-iteration-count: 1s;
+  text-align: center;
+  color: #6A8EAE;
+  margin-bottom: 0.5rem; }
+
+.subSubtitulo {
+  /*SubSubtitulo animado*/
+  animation-name: subSubtitulo;
+  animation-duration: 3s;
+  animation-iteration-count: 1s;
+  text-align: center;
+  color: #57A773; }
+
+/*Keyframes*/
+@keyframes titulo {
+  from {
+    opacity: 0;
+    transform: translate(-250px); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes subtitulo {
+  from {
+    opacity: 0;
+    transform: translate(-500px); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes subSubtitulo {
+  from {
+    opacity: 0;
+    transform: translate(-500); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*Media Queries*/
 @media screen and (min-width: 360px) {
   .multimedia {
     width: 20rem; } }
@@ -34,3 +91,5 @@ nav {
 @media only screen and (min-width: 1200px) {
   .multimedia {
     width: 44rem; } }
+
+/*Inicio de Textos*/

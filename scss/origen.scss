@@ -1,3 +1,6 @@
+@import "colores.scss";
+
+
 /*Reseteo del Css*/
 * {
     margin: 0;
@@ -26,10 +29,85 @@ html {
 
 /*Menu y Submenu*/
 nav {
-    background-color: #57A773;
+    ul {
+        font-size: 1rem;
+        li{
+            background-color: $color1;
+            text-align: center;
+        }
+    }
+}
+
+/*Titulos y subtitulos*/
+
+.titulo { /*Titulo animado*/
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: 1s;
+    text-align: center;
+    background-color: $color4;
+    color: $color1;
+    position: sticky;
+}
+
+.subtitulo { /*subtitulo animado*/
+    animation-name: subtitulo;
+    text-decoration: 2s;
+    animation-iteration-count: 1s;
+    text-align: center;
+    color: $color2;
+    margin-bottom: 0.5rem;
+
+}
+
+.subSubtitulo {/*SubSubtitulo animado*/
+	animation-name: subSubtitulo;
+	animation-duration: 3s;
+	animation-iteration-count: 1s;
+	text-align: center;
+	color: $color1;
+}
+
+/*Keyframes*/
+
+@keyframes titulo {
+	from {
+		opacity: 0;
+		transform: translate(-250px);
+
+	}
+	to {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes subtitulo {
+	from {
+		opacity: 0;
+		transform: translate(-500px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0);
+	}
 }
 
 
+@keyframes subSubtitulo {
+	from {
+		opacity: 0;
+		transform: translate(-500);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/*Media Queries*/
 @media screen and (min-width:360px) {
     .multimedia {
         width: 20rem;
@@ -48,3 +126,5 @@ nav {
         width: 44rem;
     }
 }
+
+/*Inicio de Textos*/
