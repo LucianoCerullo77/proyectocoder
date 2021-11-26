@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+	<title>Invest</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"><!--Inicio Menu y submenu Boostrap-->
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">Invest</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../secciones/testimonios.html">Testimonios</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Secciones
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="../secciones/contacto.html">Contacto</a></li>
+					  <li><a class="dropdown-item" href="../secciones/compra.html">Compra</a></li>
+					  <li><a class="dropdown-item" href="#">Login</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav><!--Final Menu y submenu-->
+	</header>
+	<main>
+		<h1 class="titulo">Contacto</h1><!--Titulo-->
+		<div class="imgFlex">
+		<img class="multimedia" src="../multimedia/contacUs.png" alt="contacto">
+		</div>
+		<h2 class="subtitulo">Somos Invest</h2><!--Subtitulo-->
+		<p>En Invest estamos al tanto del cliente y las dudas que tenga, debido a eso, queremos conocerte. Completa el formulario debajo para que podamos tener más información sobre ti.</p>
+	<section><!--Inicio De Tablas-->
+		<h3 class="subSubtitulo">Beneficios de unirte a nuestro equipo</h3>
+		<table border="5px">
+			<tr>
+				<td>Antes de Ingresar a Invest</td>
+				<td>Por lo general, las personas antes de ingresar a Invest tienen deudas y no mucha responsabilidad financiera, por lo cual, no avanzan ni crecen economicamente</td>
+			</tr>
+			<tr>
+				<td>Luego de Ingresar a Invest</td>
+				<td>Luego de Ingresar a Invest, Nuestros estudiantes son capaces de saber y como utilizar su dinero, siendo capaces de poder pagar cuentas y al mismo tiempo poder generar ingresos sin ningún otro inconveniente.</td>
+			</tr>
+			<tr>
+				<td>Tiempo de Crecimiento sin Invest</td>
+				<td>5-10 años Aproximadamente</td>
+			</tr>
+			<tr>
+				<td>Tiempo de Crecimiento con Invest</td>
+				<td>6 a 12 Meses Aproximadamente</td>
+			</tr>
+			<tr>
+				<td>Comentarios comunes de gente que no es parte de nuestro equipo</td>
+				<td>"En algún momento lo pagaré, cuando tenga plata" Esta frase puede ser bastante común en cualquier ámbito donde no haya enseñanza económica, Siempre se deja para después algo que muy probablemente no pueda pagarse en su momento, haciendo una bola de nieve muy complicada de parar.</td>
+			</tr>
+			<tr>
+				<td>Gente que ya es parte de Invest</td>
+				<td>"Gracias a lo que invertí, pude generar un poco más de plata y deshacerme de las deuda que debía." Este es un claro comentario que se recibe diariamente en la academia, De alumnos que gracias a nosotros y nuestra enseñanza, pudieron lograr generar esos ingresos que querían y necesitaban, para así poder deshacerse de deudas y, no obstante, poder generar ingresos a favor. </td>
+			</tr>
+		</table>
+	</section>
+	<section><!--Inicio de Formulario-->
+		<br>
+		<form>
+			<fieldset>
+				<legend>Datos Personales</legend>
+				<label for="nombre">Nombre y Apellido</label><br>
+				<input type="text" name="nombre" placeholder="Completa tu nombre"><br>
+				<label for="dni">DNI</label><br>
+				<input type="number" name="dni" placeholder="Ingresa tu numero de DNI"><br>
+				<label for="email">Email</label><br>
+				<input type="text" name="email" placeholder="Ingresa tu email"><br>
+				<label for="edad">Género</label><br>
+		<form>
+			<select name="genero">
+				<option value="H">Hombre</option>
+				<option value="M">Mujer</option>
+				<option value="NB">No Binario/Otro</option>
+			</select><br>
+		</form>
+		<label for="ciudades">Selecciona tu Ciudad</label><br>
+		<form>
+			<select name="ciudades">
+				<option value="BSAS">Buenos Aires</option>
+				<option value="CRB">Cordoba</option>
+				<option value="RSR">Rosario</option>
+				<option value="MDP">Mar del Plata</option>
+				<option value="SMT">San Miguel de Tucumán</option>
+				<option value="SLT">Salta</option>
+				<option value="STF">Santa Fe</option>
+				<option value="CRT">Corrientes</option>
+				<option value="BB">Bahía Blanca</option>
+				<option value="RST">Resistencia</option>
+			</select>
+		</form>
+		<label for="consultas">Consultas</label><br>
+		<textArea name="consultas" id="" cols="30" rows="15" placeholder="Ingresa tu consulta"></textarea><br>
+		<input type="submit" name= "Enviar">
+		<input type="reset" name="Restablecer"><br>
+		<label for="spam">Deseo recibir emails promocionales</label><input type="checkbox"></fieldset></form>
+	</section><!--Final del Formulario-->
+	</main>
+	<footer class="py-3 my-4"><!--Footer-->
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+			<li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+		  <li class="nav-item"><a href="secciones/nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+		  <li class="nav-item"><a href="secciones/compra.html" class="nav-link px-2 text-muted">Compra</a></li>
+		  <li class="nav-item"><a href="secciones/testimonios.html" class="nav-link px-2 text-muted">Testimonios</a></li>
+		  <li class="nav-item"><a href="secciones/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+		</ul>
+		<p class="text-center text-muted">© 2021 Invest All Rights Reserved By Luciano Cerullo´s Company, Inc</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
