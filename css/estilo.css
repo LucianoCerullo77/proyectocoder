@@ -54,6 +54,45 @@ nav ul {
   text-align: center;
   color: #57A773; }
 
+/*Inicio de Textos*/
+p {
+  text-align: center;
+  margin-bottom: 0.5rem; }
+
+b {
+  font-style: italic;
+  color: #9BD1E5; }
+
+i {
+  color: #57A773; }
+
+/*Tablas y formularios*/
+table {
+  border: #000000 0.2rem solid;
+  color: #6A8EAE; }
+
+tr {
+  border: #000000 0.1rem solid; }
+
+fieldset {
+  text-align: center; }
+
+legend {
+  color: #57A773;
+  font-size: 2rem; }
+
+label {
+  font-style: italic; }
+
+input {
+  border-color: #6A8EAE; }
+
+select {
+  border-color: #6A8EAE; }
+
+textarea {
+  border-color: #6A8EAE; }
+
 /*Keyframes*/
 @keyframes titulo {
   from {
@@ -91,5 +130,3 @@ nav ul {
 @media only screen and (min-width: 1200px) {
   .multimedia {
     width: 44rem; } }
-
-/*Inicio de Textos*/

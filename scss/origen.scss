@@ -68,6 +68,58 @@ nav {
 	color: $color1;
 }
 
+/*Inicio de Textos*/
+
+p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+b {
+    font-style: italic;
+    color: $color3;
+}
+
+i {
+    color: $color1;
+}
+
+/*Tablas y formularios*/
+
+table {
+    border:$color5 0.2rem solid;
+    color: $color2;
+}
+
+tr {
+    border: $color5 0.1rem solid;
+}
+
+fieldset {
+    text-align: center;
+}
+
+legend {
+    color: $color1;
+    font-size: 2rem;
+}
+
+label {
+    font-style: italic;
+}
+
+input {
+    border-color: $color2;
+}
+
+select {
+    border-color: $color2;
+}
+
+textarea {
+    border-color: $color2;
+}
+
 /*Keyframes*/
 
 @keyframes titulo {
@@ -126,5 +178,3 @@ nav {
         width: 44rem;
     }
 }
-
-/*Inicio de Textos*/
