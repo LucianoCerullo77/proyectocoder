@@ -93,6 +93,11 @@ select {
 textarea {
   border-color: #6A8EAE; }
 
+/*Pie de Pagina/footer*/
+footer {
+  background-color: #2D2F31;
+  color: #fff; }
+
 /*Keyframes*/
 @keyframes titulo {
   from {
