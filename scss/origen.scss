@@ -1,0 +1,50 @@
+/*Reseteo del Css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1rem;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/*Imagenes y contenido multimedia*/
+.multimedia {
+    width: 44rem;
+}
+
+.imgFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.videoFlex {
+    display: flex;
+    justify-content: center;
+}
+
+/*Menu y Submenu*/
+nav {
+    background-color: #57A773;
+}
+
+
+@media screen and (min-width:360px) {
+    .multimedia {
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .multimedia {
+        width: 40rem;
+    } 
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .multimedia {
+        width: 44rem;
+    }
+}
