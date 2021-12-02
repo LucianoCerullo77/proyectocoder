@@ -12,6 +12,10 @@ html {
     font-family: "Fira Sans", sans-serif;
 }
 
+main, nav {
+    background: $color1;
+}
+
 /*Imagenes y contenido multimedia*/
 .multimedia {
     width: 44rem;
@@ -52,6 +56,7 @@ nav {
 
 .subtitulo { /*subtitulo animado*/
     animation-name: subtitulo;
+    animation-duration: 3s;
     text-decoration: 2s;
     animation-iteration-count: 1s;
     text-align: center;
@@ -72,12 +77,12 @@ nav {
 
 p {
     text-align: center;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
 }
 
 b {
     font-style: italic;
-    color: $color3;
+    color: $color4;
 }
 
 i {
@@ -86,13 +91,23 @@ i {
 
 /*Tablas y formularios*/
 
+form {
+    padding: 2rem;
+    text-align: left;
+}
+
 table {
     border:$color5 0.2rem solid;
     color: $color2;
+    margin: 1rem;
+}
+
+td {
+    padding: 2.5rem;
 }
 
 tr {
-    border: $color5 0.1rem solid;
+    border: $color4 0.1rem solid;
 }
 
 fieldset {
@@ -101,7 +116,7 @@ fieldset {
 
 legend {
     color: $color1;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 label {
@@ -125,6 +140,7 @@ textarea {
 footer {
     background-color: $color4;
     color: $color6;
+    margin-top: auto;
 }
 
 /*Keyframes*/
@@ -144,7 +160,7 @@ footer {
 @keyframes subtitulo {
 	from {
 		opacity: 0;
-		transform: translate(-500px);
+		transform: translate(500px);
 	}
 
 	to {
@@ -170,6 +186,22 @@ footer {
 @media screen and (min-width:360px) {
     .multimedia {
         width: 20rem;
+    }
+
+    .titulo {
+        padding: 2.5rem;
+    }
+    
+    .subtitulo {
+        margin: 5rem;
+    }
+
+    .subSubtitulo {
+        margin: 2rem;
+    }
+
+    tr {
+        margin: 3rem;
     }
 }
 
