@@ -7,7 +7,7 @@ html {
   font-size: 1rem;
   font-family: "Fira Sans", sans-serif; }
 
-main, nav {
+main {
   background: #57A773; }
 
 /*Imagenes y contenido multimedia*/
@@ -38,7 +38,8 @@ nav ul {
   text-align: center;
   background-color: #2D2F31;
   color: #57A773;
-  position: sticky; }
+  position: sticky;
+  font-size: 3rem; }
 
 .subtitulo {
   /*subtitulo animado*/
@@ -73,12 +74,13 @@ i {
 /*Tablas y formularios*/
 form {
   padding: 2rem;
-  text-align: left; }
+  text-align: center; }
 
 table {
   border: #000000 0.2rem solid;
   color: #6A8EAE;
-  margin: 1rem; }
+  margin: 1rem;
+  background-color: #fff; }
 
 td {
   padding: 2.5rem; }
@@ -143,16 +145,36 @@ footer {
   .titulo {
     padding: 2.5rem; }
   .subtitulo {
+    margin: 0.1rem; }
+  .subSubtitulo {
+    margin: 2rem; }
+  tr {
+    margin: 1rem; }
+  td {
+    padding: 00.2rem; }
+  p {
+    padding: 1rem; } }
+
+@media screen and (min-width: 768px) {
+  .multimedia {
+    width: 40rem; }
+  .titulo {
+    padding: 2.5rem; }
+  .subtitulo {
     margin: 5rem; }
   .subSubtitulo {
     margin: 2rem; }
   tr {
     margin: 3rem; } }
 
-@media screen and (min-width: 768px) {
-  .multimedia {
-    width: 40rem; } }
-
 @media only screen and (min-width: 1200px) {
   .multimedia {
-    width: 44rem; } }
+    width: 44rem; }
+  .titulo {
+    padding: 2.5rem; }
+  .subtitulo {
+    margin: 5rem; }
+  .subSubtitulo {
+    margin: 2rem; }
+  tr {
+    margin: 3rem; } }

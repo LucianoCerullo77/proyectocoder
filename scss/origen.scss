@@ -12,7 +12,7 @@ html {
     font-family: "Fira Sans", sans-serif;
 }
 
-main, nav {
+main {
     background: $color1;
 }
 
@@ -52,6 +52,7 @@ nav {
     background-color: $color4;
     color: $color1;
     position: sticky;
+    font-size: 3rem;
 }
 
 .subtitulo { /*subtitulo animado*/
@@ -93,13 +94,14 @@ i {
 
 form {
     padding: 2rem;
-    text-align: left;
+    text-align: center;
 }
 
 table {
     border:$color5 0.2rem solid;
     color: $color2;
     margin: 1rem;
+    background-color: #fff;
 }
 
 td {
@@ -187,6 +189,36 @@ footer {
     .multimedia {
         width: 20rem;
     }
+    
+    .titulo {
+        padding: 2.5rem;
+    }
+    
+    .subtitulo {
+        margin: 0.1rem;
+    }
+
+    .subSubtitulo {
+        margin: 2rem;
+    }
+
+    tr {
+        margin: 1rem;
+    }
+    
+    td {
+        padding: 00.2rem;
+    }
+
+    p {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .multimedia {
+        width: 40rem;
+    }
 
     .titulo {
         padding: 2.5rem;
@@ -203,17 +235,27 @@ footer {
     tr {
         margin: 3rem;
     }
-}
-
-@media screen and (min-width:768px) {
-    .multimedia {
-        width: 40rem;
-    } 
     
 }
 
 @media only screen and (min-width: 1200px) {
     .multimedia {
         width: 44rem;
+    }
+
+    .titulo {
+        padding: 2.5rem;
+    }
+    
+    .subtitulo {
+        margin: 5rem;
+    }
+
+    .subSubtitulo {
+        margin: 2rem;
+    }
+
+    tr {
+        margin: 3rem;
     }
 }
